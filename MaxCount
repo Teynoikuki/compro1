@@ -1,0 +1,30 @@
+#include <stdio.h>
+void main()
+{
+    int k,x,y=0,n,i=1,max,count=0,count2=0;
+    scanf("%d",&k);
+scanf("%d",&n);
+    while(i<=n)
+    {
+        count2=0;
+        while(1)
+        {
+            scanf("%d",&x);
+            if(x==0)
+            {
+                break;
+            }
+            if(x%k==0&&x>0)
+            {
+                count2+=1;
+            }
+        }
+        if(count2>=y){
+            y=count2;
+            max=i;
+        }
+        i++;
+    }
+    printf("%d ",max);
+    printf("%d",y);
+}
