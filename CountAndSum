@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main(){
+    int k,x,count=0,count2=0,sum=0;
+    scanf("%d",&k);
+    while(1){
+        scanf("%d",&x);
+        if(x==0){
+            break;
+        }
+        count+=1;
+        if(x%k==0&&x>0){
+            count2+=1;
+            sum=sum+x;
+        }
+    }
+    printf("%d\n",count);
+    printf("%d\n",count2);
+    printf("%d\n",sum);
+}
