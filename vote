@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main(){
+    int n,k,countmax=0;
+    scanf("%d %d",&n,&k);
+    int a[101];
+    for(int i=1;i<=k;i++){
+        scanf("%d ",&a[i]);
+
+    }
+    for(int i=1;i<=k;i++){
+        printf("%d ",&a[i]);
+    }
+    printf("%d\n%d",countmax);
+}
